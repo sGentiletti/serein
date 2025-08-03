@@ -21,7 +21,8 @@ export default function Carousel({ slides }: CarouselProps) {
       align: "center",
       skipSnaps: false,
       dragFree: false,
-      containScroll: "trimSnaps",
+      containScroll: "keepSnaps",
+      slidesToScroll: 1,
     },
     [
       Autoplay({

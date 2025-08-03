@@ -19,8 +19,9 @@
 
   .slide {
     position: relative;
-    min-width: 50%;
+    width: 60%;
     padding-left: 10px;
+    flex-shrink: 0;
 
     .slide-content {
       transition: transform 0.3s ease, opacity 0.3s ease;
