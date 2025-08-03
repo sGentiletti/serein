@@ -17,7 +17,7 @@ export default function Carousel({ slides }: CarouselProps) {
       <div className="flex">
         {slides.map((slide: Slide, index: number) => (
           <div className="flex-[0_0_100%]" key={index}>
-            <img src={slide.image} alt={slide.alt} className="w-full" />
+            <img src={slide.image} alt={slide.alt} className="w-full h-auto" />
           </div>
         ))}
       </div>

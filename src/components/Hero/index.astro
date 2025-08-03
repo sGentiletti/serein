@@ -1,11 +1,13 @@
 ---
 import "./index.scss";
+import { Image } from "astro:assets";
+import heroImage from "../../assets/hero.png";
 ---
 
 <section class="hero" id="hero">
   <h1 class="hero__title">SOMA CHAIR</h1>
   <div class="hero__images">
-    <img src="/assets/hero.png" alt="Chairs" class="image" />
+    <Image src={heroImage} alt="Chairs" class="image" />
   </div>
   <div class="hero__buttons">
     <button class="button button--primary">Más Información</button>

@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import dimensionsImage from "../../assets/dimensions.png";
+---
+
 <section class="py-12 bg-gray-100">
   <h2 class="text-center text-3xl font-bold mb-8">Dimensiones</h2>
   <div
@@ -12,10 +17,6 @@
       <li>Ancho del brazo: 12 cm</li>
       <li>Altura del marco: 100 cm</li>
     </ul>
-    <img
-      src="/images/chair-dimensions.png"
-      alt="Dimensiones"
-      class="w-1/3 mt-8 md:mt-0"
-    />
+    <Image src={dimensionsImage} alt="Dimensiones" class="w-1/3 mt-8 md:mt-0" />
   </div>
 </section>
