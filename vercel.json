@@ -4,7 +4,7 @@
   "framework": "astro",
   "functions": {
     "src/pages/**/*.astro": {
-      "runtime": "nodejs20.x"
+      "runtime": "nodejs22.x"
     }
   }
-} 
+}
