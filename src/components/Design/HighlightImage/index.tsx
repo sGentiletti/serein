@@ -1,5 +1,6 @@
 import HighlightPoint from "./HighlightPoint/index.tsx";
 import "./index.scss";
+import heroImage from "../../../assets/desing.png";
 
 const highlights = [
   {
@@ -51,7 +52,13 @@ const highlights = [
 export default function HighlightImage() {
   return (
     <div className="highlight-image__container">
-      <img src="/assets/desing.png" alt="sofa" className="image" />
+      <img
+        src={heroImage.src}
+        alt="sofa"
+        width={heroImage.width}
+        height={heroImage.height}
+        className="w-full h-auto"
+      />
 
       {highlights.map((highlight, index) => (
         <HighlightPoint key={index} {...highlight} />

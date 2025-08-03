@@ -32,12 +32,6 @@
   &__actions {
     display: flex;
     gap: 40px;
-    .action {
-      img {
-        width: 22px;
-        height: 22px;
-      }
-    }
   }
 
   &--scrolled {
