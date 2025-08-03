@@ -1,0 +1,28 @@
+@use "../../styles/common";
+
+.chair {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 50px 0;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 30px;
+
+    &__title {
+      font-family: common.$font-family-secondary;
+      color: common.$tertiary-color;
+      font-size: 75px;
+      font-weight: 700;
+    }
+
+    &__description {
+      font-family: common.$font-family-secondary;
+      font-size: 20px;
+      font-weight: 400;
+    }
+  }
+}

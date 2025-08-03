@@ -1,0 +1,39 @@
+---
+import "./index.scss";
+import Carousel from "./Carousel/index.tsx";
+import chairImage1 from "../../assets/sillon-1.png";
+import chairImage2 from "../../assets/sillon-2.png";
+import chairImage3 from "../../assets/sillon-3.png";
+
+const slides = [
+  {
+    src: chairImage1.src,
+    alt: "",
+    width: chairImage1.width,
+    height: chairImage1.height,
+  },
+  {
+    src: chairImage2.src,
+    alt: "",
+    width: chairImage2.width,
+    height: chairImage2.height,
+  },
+  {
+    src: chairImage3.src,
+    alt: "",
+    width: chairImage3.width,
+    height: chairImage3.height,
+  },
+];
+---
+
+<section class="chair" id="chair">
+  <div class="content">
+    <h2 class="content__title">Chair</h2>
+    <p class="content__description">
+      Curvas y comodidad se unen en el sillón Chair, ofreciendo un ambiente
+      relajado y acogedor. Disponible en tela o piel.
+    </p>
+  </div>
+  <Carousel client:load slides={slides} />
+</section>

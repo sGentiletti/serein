@@ -6,7 +6,7 @@ const highlights = [
   {
     pointX: 150,
     pointY: 150,
-    diagEndX: 110,
+    diagEndX: 80,
     diagEndY: 63,
     lineEndX: 40,
     lineEndY: 63,
@@ -54,10 +54,12 @@ export default function HighlightImage() {
     <div className="highlight-image__container">
       <img
         src={heroImage.src}
-        alt="sofa"
+        alt=""
         width={heroImage.width}
         height={heroImage.height}
         className="w-full h-auto"
+        loading="lazy"
+        aria-hidden="true"
       />
 
       {highlights.map((highlight, index) => (
