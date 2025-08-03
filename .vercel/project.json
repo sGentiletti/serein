@@ -1,4 +1,4 @@
 {
     "framework": "astro",
-    "nodeVersion": "22"
+    "nodeVersion": "20"
 }
