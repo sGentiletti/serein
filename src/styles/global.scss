@@ -1,0 +1,18 @@
+@use "./fonts.scss";
+@use "./common.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: common.$primary-color;
+}
+
+a {
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.8;
+    text-decoration: none;
+  }
+}

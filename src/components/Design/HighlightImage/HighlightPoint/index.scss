@@ -1,0 +1,104 @@
+@use "../../../../styles/common";
+
+// Base styles
+.highlight-container {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.highlight-svg {
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  position: relative;
+  width: 100%;
+}
+
+// Point styles
+.highlight-point {
+  cursor: pointer;
+  fill: common.$secondary-color;
+  pointer-events: all;
+}
+
+// Line styles
+.highlight-line {
+  fill: none;
+  pointer-events: none;
+  stroke: common.$tertiary-color;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  stroke-width: 2px;
+  transition: stroke-dashoffset 0.5s ease;
+
+  &.draw {
+    stroke-dashoffset: 0;
+  }
+}
+
+// Label styles
+.highlight-label {
+  color: common.$secondary-color;
+  font-size: 20px;
+  font-family: common.$font-family-secondary;
+  font-weight: 400;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Dot styles
+.dot-inner,
+.dot-outer {
+  animation: pulse 2s infinite ease-in-out;
+  transform-origin: center center;
+  transition: transform 0.3s ease;
+}
+
+.dot-inner {
+  fill: common.$tertiary-color;
+}
+
+.dot-outer {
+  fill: rgba($color: common.$secondary-color, $alpha: 0.58);
+}
+
+// Dot hover states
+.highlight-dot {
+  cursor: pointer;
+  pointer-events: all;
+
+  &.hovered {
+    .dot-inner,
+    .dot-outer {
+      animation: none;
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
+
+// Animations
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

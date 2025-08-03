@@ -1,0 +1,66 @@
+@use "../../styles/common";
+
+.hero {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: common.$font-family-primary;
+  justify-content: center;
+  padding-top: 60px;
+  position: relative;
+
+  &__title {
+    color: common.$tertiary-color;
+    font-size: 140px;
+    font-weight: 600;
+    position: absolute;
+    top: 10%;
+  }
+
+  &__images {
+    img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 20px;
+
+    .button {
+      border: 1px solid;
+      border-radius: 28px;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 10px 24px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &--primary {
+        background-color: common.$secondary-color;
+        border-color: common.$secondary-color;
+        color: common.$primary-color;
+      }
+
+      &--secondary {
+        background-color: common.$primary-color;
+        border-color: black;
+        color: black;
+      }
+    }
+  }
+
+  &__description {
+    font-family: common.$font-family-secondary;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 500;
+    color: gray;
+    text-align: center;
+  }
+}

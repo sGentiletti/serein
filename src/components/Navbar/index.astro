@@ -1,0 +1,36 @@
+---
+import "./index.scss";
+---
+
+<nav class="navbar" id="navbar">
+  <a href="#">
+    <div class="navbar__logo">serein.</div>
+  </a>
+  <ul class="navbar__menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#design">Colección</a></li>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="#">Contacto</a></li>
+    <li><a href="#">Preguntas</a></li>
+  </ul>
+  <div class="navbar__actions">
+    <a href="#" class="action">
+      <img src="/assets/search.svg" alt="search" />
+    </a>
+    <a href="#" class="action">
+      <img src="/assets/user.svg" alt="user" />
+    </a>
+    <a href="#" class="action">
+      <img src="/assets/cart.svg" alt="cart" />
+    </a>
+  </div>
+</nav>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const navbar = document.getElementById("navbar");
+    if (navbar) {
+      navbar.classList.toggle("navbar--scrolled", window.scrollY > 50);
+    }
+  });
+</script>
