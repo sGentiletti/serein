@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import dimensionsImage from "../../assets/dimensions.png";
+import "./index.scss";
+---
+
+<section class="dimensions" id="dimensions">
+  <div class="dimensions__content">
+    <h2 class="title">Dimensiones</h2>
+    <div class="table-container">
+      <table class="dimensions-table">
+        <tbody>
+          <tr>
+            <td>Altura total</td>
+            <td>100 cm</td>
+          </tr>
+          <tr>
+            <td>Profundidad total</td>
+            <td>140 cm</td>
+          </tr>
+          <tr>
+            <td>Ancho total</td>
+            <td>150 cm</td>
+          </tr>
+          <tr>
+            <td>Altura del asiento</td>
+            <td>40 cm</td>
+          </tr>
+          <tr>
+            <td>Profundidad del asiento</td>
+            <td>55 cm</td>
+          </tr>
+          <tr>
+            <td>Ancho del asiento</td>
+            <td>55 cm</td>
+          </tr>
+          <tr>
+            <td>Altura del brazo</td>
+            <td>45 cm</td>
+          </tr>
+          <tr>
+            <td>Altura del marco</td>
+            <td>120 cm</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="dimensions__image">
+    <Image
+      src={dimensionsImage}
+      aria-hidden="true"
+      alt=""
+      loading="lazy"
+      layout="full-width"
+    />
+  </div>
+</section>

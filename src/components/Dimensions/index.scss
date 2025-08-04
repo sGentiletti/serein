@@ -1,0 +1,67 @@
+@use "../../styles/common";
+
+.dimensions {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+  padding: 50px 30px;
+  gap: 50px;
+  font-family: common.$font-family-secondary;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .title {
+      color: common.$tertiary-color;
+      font-size: 75px;
+      font-weight: 700;
+    }
+
+    .table-container {
+      .dimensions-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 18px;
+        color: black;
+
+        th,
+        td {
+          padding: 12px 16px;
+          text-align: left;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        th {
+          font-weight: 600;
+          font-size: 20px;
+          color: black;
+          background-color: rgba(0, 0, 0, 0.02);
+        }
+
+        td {
+          font-weight: 400;
+
+          &:first-child {
+            font-weight: 500;
+          }
+
+          &:last-child {
+            font-weight: 600;
+            text-align: right;
+          }
+        }
+
+        tbody tr:hover {
+          background-color: rgba(0, 0, 0, 0.02);
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
