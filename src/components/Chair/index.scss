@@ -5,6 +5,7 @@
   display: grid;
   grid-template-columns: 1fr 2fr;
   padding: 50px 0;
+  font-family: common.$font-family-secondary;
 
   .content {
     display: flex;
@@ -13,16 +14,77 @@
     padding: 0 30px;
 
     &__title {
-      font-family: common.$font-family-secondary;
       color: common.$tertiary-color;
       font-size: 75px;
       font-weight: 700;
     }
 
     &__description {
-      font-family: common.$font-family-secondary;
       font-size: 20px;
       font-weight: 400;
+    }
+
+    &__colors {
+      display: flex;
+      gap: 30px;
+      span {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid;
+      }
+
+      .color-primary {
+        background-color: #b5c0c2;
+        border-color: #1d1e1c;
+      }
+
+      .color-secondary {
+        background-color: #7d6d4f;
+        border-color: #7d6d4f;
+      }
+
+      .color-tertiary {
+        background-color: #c2bebb;
+        border-color: #c2bebb;
+      }
+    }
+
+    &__important {
+      color: #585856;
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    &__buttons {
+      display: flex;
+      gap: 20px;
+
+      .button {
+        border: 1px solid;
+        border-radius: 28px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 24px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          opacity: 0.8;
+        }
+
+        &--primary {
+          background-color: common.$secondary-color;
+          border-color: common.$secondary-color;
+          color: common.$primary-color;
+        }
+
+        &--secondary {
+          background-color: common.$primary-color;
+          border-color: black;
+          color: black;
+        }
+      }
     }
   }
 }
