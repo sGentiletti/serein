@@ -1,66 +1,66 @@
 /* MazzardH */
 @font-face {
+  font-display: swap;
   font-family: "MazzardH";
-  src: url("/fonts/MazzardH-Regular.otf") format("opentype");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  src: url("/fonts/MazzardH-Regular.otf") format("opentype");
 }
 
 @font-face {
+  font-display: swap;
   font-family: "MazzardH";
-  src: url("/fonts/MazzardH-Medium.otf") format("opentype");
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  src: url("/fonts/MazzardH-Medium.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "MazzardH";
-  src: url("/fonts/MazzardH-SemiBold.otf") format("opentype");
-  font-weight: 600;
-  font-style: normal;
   font-display: swap;
+  font-family: "MazzardH";
+  font-style: normal;
+  font-weight: 600;
+  src: url("/fonts/MazzardH-SemiBold.otf") format("opentype");
 }
 
 /* MazzardM */
 @font-face {
+  font-display: swap;
   font-family: "MazzardM";
-  src: url("/fonts/MazzardM-Regular.otf") format("opentype");
+  font-style: normal;
   font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  src: url("/fonts/MazzardM-Regular.otf") format("opentype");
 }
 
 @font-face {
+  font-display: swap;
   font-family: "MazzardM";
-  src: url("/fonts/MazzardM-Medium.otf") format("opentype");
+  font-style: normal;
   font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+  src: url("/fonts/MazzardM-Medium.otf") format("opentype");
 }
 
 @font-face {
+  font-display: swap;
   font-family: "MazzardM";
-  src: url("/fonts/MazzardM-SemiBold.otf") format("opentype");
+  font-style: normal;
   font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+  src: url("/fonts/MazzardM-SemiBold.otf") format("opentype");
 }
 
 @font-face {
-  font-family: "MazzardM";
-  src: url("/fonts/MazzardM-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
   font-display: swap;
+  font-family: "MazzardM";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/MazzardM-Bold.otf") format("opentype");
 }
 
 /* Myriad Pro (solo el Regular) */
 @font-face {
-  font-family: "MyriadPro";
-  src: url("/fonts/MyriadPro-Regular.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
   font-display: swap;
+  font-family: "MyriadPro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/MyriadPro-Regular.otf") format("opentype");
 }

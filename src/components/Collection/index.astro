@@ -1,0 +1,58 @@
+---
+import { Image } from "astro:assets";
+import collectionImage1 from "../../assets/c1.png";
+import collectionImage2 from "../../assets/c2.png";
+import collectionImage3 from "../../assets/c3.png";
+
+import "./index.scss";
+---
+
+<section class="collection" id="collection">
+  <div class="collection__about">
+    <div class="item">
+      <p>
+        Sobre nosotros <br />
+        <span>¿Qué hacemos?</span>
+      </p>
+    </div>
+    <div class="item">
+      <p>
+        Creamos sillas y sillones que trascienden lo <br />
+        cotidiano, aportando diseño y comodidad.
+      </p>
+      <div class="button-container">
+        <button>Conocé más</button>
+      </div>
+    </div>
+  </div>
+  <h2 class="collection__title">Colecciones destacadas</h2>
+  <div class="collection__items">
+    <div class="item">
+      <Image
+        src={collectionImage1}
+        alt=""
+        loading="lazy"
+        layout="full-width"
+        aria-hidden="true"
+      />
+    </div>
+    <div class="item">
+      <Image
+        src={collectionImage2}
+        alt=""
+        loading="lazy"
+        layout="full-width"
+        aria-hidden="true"
+      />
+    </div>
+    <div class="item">
+      <Image
+        src={collectionImage3}
+        alt=""
+        loading="lazy"
+        layout="full-width"
+        aria-hidden="true"
+      />
+    </div>
+  </div>
+</section>

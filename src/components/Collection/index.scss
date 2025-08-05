@@ -1,0 +1,73 @@
+@use "../../styles/common";
+
+.collection {
+  background-color: #9f9584;
+  color: common.$primary-color;
+  padding: 50px 30px;
+
+  &__about {
+    display: flex;
+    font-family: common.$font-family-secondary;
+    gap: 50px;
+    justify-content: space-between;
+
+    .item {
+      padding: 0 100px;
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        span {
+          font-size: 24px;
+          font-weight: 500;
+        }
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+
+        button {
+          background-color: common.$primary-color;
+          border: 1px solid;
+          border-color: common.$primary-color;
+          border-radius: 28px;
+          box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.25);
+          color: #9f9584;
+          cursor: pointer;
+          font-size: 18px;
+          font-weight: 500;
+          padding: 10px 24px;
+          transition: all 0.3s ease;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    font-family: common.$font-family-secondary;
+    font-size: 75px;
+    font-weight: 700;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  &__items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    .item {
+      cursor: pointer;
+      transition: all 0.3s ease;
+      &:hover {
+        opacity: 0.8;
+        transform: scale(1.05);
+      }
+    }
+  }
+}

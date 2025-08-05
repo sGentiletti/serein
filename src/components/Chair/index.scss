@@ -3,9 +3,9 @@
 .chair {
   align-items: center;
   display: grid;
+  font-family: common.$font-family-secondary;
   grid-template-columns: 1fr 2fr;
   padding: 50px 0;
-  font-family: common.$font-family-secondary;
 
   .content {
     display: flex;
@@ -28,10 +28,10 @@
       display: flex;
       gap: 30px;
       span {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
         border: 1px solid;
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
       }
 
       .color-primary {

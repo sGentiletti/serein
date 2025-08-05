@@ -49,11 +49,11 @@
   }
 
   &__description {
+    color: gray;
     font-family: common.$font-family-secondary;
-    margin: 20px 0;
     font-size: 22px;
     font-weight: 500;
-    color: gray;
+    margin: 20px 0;
     text-align: center;
   }
 }
