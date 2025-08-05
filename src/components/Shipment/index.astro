@@ -1,0 +1,86 @@
+---
+import LockIcon from "../../assets/lock.svg";
+import ChangeIcon from "../../assets/change.svg";
+import WhatsappIcon from "../../assets/wpp.svg";
+import CardIcon from "../../assets/card.svg";
+import TruckIcon from "../../assets/truck.svg";
+import "./index.scss";
+---
+
+<section class="shipment" id="shipment">
+  <h2 class="shipment__title">Envío</h2>
+  <div class="shipment__content">
+    <div class="description">
+      <p>
+        <strong>Nuestro servicio premium de entrega a domicilio</strong>
+        <br />
+        <span
+          >Nuestros profesionales de servicio premium desempacarán,
+          inspeccionarán y ensamblarán cuidadosamente su compra en la habitación
+          que usted elija. <br />
+          Para su comodidad, retiraremos todo el material de embalaje. Cuando el
+          artículo esté casi listo, nuestro equipo de Atención al Cliente se pondrá
+          en contacto con usted para programar la entrega.
+        </span>
+      </p>
+      <p>
+        <strong>Preparándose para la entrega</strong>
+        <br />
+        <span
+          >Revise el recorrido que seguirán los muebles dentro de su casa y
+          anote cualquier obstáculo. <br />
+          Observe si hay iluminación baja o alfombras sueltas. <br />
+          Despeje la habitación donde se colocarán los artículos. <br />
+          Retire muebles pequeños o decoración que puedan dificultar el desempaquetado.
+          <br />
+          Quite con cuidado cualquier peligro potencial que pueda estar en el camino
+          de entrega. <br />
+          En invierno, asegúrese de que el camino hacia su casa esté libre de hielo.
+          Al recibir los artículos, informe a nuestros profesionales sobre cualquier
+          peligro para garantizar una entrega segura.</span
+        >
+      </p>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <LockIcon width={40} height={40} />
+        <div>
+          <h3>COMPRA PROTEGIDA</h3>
+          <p>Tus datos cuidados durante toda la compra.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <ChangeIcon width={40} height={40} />
+        <div>
+          <h3>CAMBIOS Y DEVOLUCIONES</h3>
+          <p>
+            Si no cumple tus expectativas, podes <br /> cambiarlo por otro o devolverlo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="benefits">
+    <div class="benefits__item">
+      <WhatsappIcon width={80} height={80} />
+      <p>
+        <strong> <a href="tel:+5491124685440">+54 9 11 2468-5440</a></strong>
+        <br />
+        <span>Lunes a Viernes de 10 a 19hs. <br /> Sábados de 10 a 14hs.</span>
+      </p>
+    </div>
+    <div class="benefits__item">
+      <CardIcon width={80} height={80} />
+      <p>
+        <strong>TARJETAS DE CRÉDITO, DÉBITO Y <br /> TRANSFERENCIAS.</strong>
+        <br />
+      </p>
+    </div>
+    <div class="benefits__item">
+      <TruckIcon width={80} height={80} />
+      <p>
+        <strong>ENVÍOS A TODO EL PAÍS.</strong>
+      </p>
+    </div>
+  </div>
+</section>
